@@ -1,29 +1,29 @@
 {
-  "subTitle": "Ask us anything about our brand and products, and get factual responses.",
+  "subTitle": "Explore Our Service Inquiries",
   "faqs": [
     {
-      "question": "What types of tools are included in the Starter Kit?",
-      "answer": "The Starter Kit features essential hand and power tools for diverse DIY projects, including hammers, drills, screwdrivers, and a variety of fasteners. It's a curated selection to help beginners and experienced DIYers alike tackle most home improvement tasks."
+      "question": "My property requires repair. Who will handle it?",
+      "answer": "As the insured party, you have the authority to select and hire a repair contractor. SMART PRO, a fully licensed and bonded Disaster Recovery Specialist™, is at your service. Rest assured, we're committed to restoring your property to its pre-loss state."
     },
     {
-      "question": "Can I upgrade from the Starter Kit to the Professional Toolbox?",
-      "answer": "Absolutely! You can upgrade to the Professional Toolbox at any time to access a wider range of high-quality tools, enjoy priority customer support, and receive exclusive content. Contact our support team for a seamless transition."
+      "question": "How should I handle damaged items?",
+      "answer": "SMART PRO will meticulously inventory your personal belongings, undertake restoration or cleaning as needed, and securely store them in a climate-controlled facility until your property is fully repaired. Items beyond repair can be replaced if covered by your insurance policy."
     },
     {
-      "question": "What discounts are available for bulk orders through the Professional Toolbox plan?",
-      "answer": "Professional Toolbox members are entitled to exclusive discounts on bulk orders, the percentage of which may vary depending on the order volume. Get in touch with us to discuss your needs, and we'll provide a tailored discount structure."
+      "question": "What about my valuables?",
+      "answer": "Keep your valuables, such as jewelry, important documents, and firearms, with you for safekeeping."
     },
     {
-      "question": "What kind of customer support can I expect?",
-      "answer": "All our customers receive dedicated email support. With the Starter Kit, you'll receive our standard support, while the Professional Toolbox plan upgrades you to priority support, meaning faster response times and specialized assistance."
+      "question": "Who assists with fixture and material selections?",
+      "answer": "Our SMART PRO Project Manager will collaborate with you on selecting fixtures and construction materials. We have trusted suppliers ready to assist with choices ranging from flooring and paint colors to lighting and plumbing fixtures, ensuring a seamless process."
     },
     {
-      "question": "How current are the online resources and tutorials?",
-      "answer": "We regularly update our online resources and tutorials to reflect the latest trends in DIY and construction, as well as introductions to new tools and techniques. Our material aims to be comprehensive and user-friendly for all skill levels."
+      "question": "What's involved in the repair process?",
+      "answer": "Our Project Manager and Project Coordinator will schedule repairs with our skilled crews and approved vendors. Any additional repairs necessitated will be detailed in an estimate submitted to your insurance adjuster for approval. Any extra services requested by you will be completed upon full payment."
     },
     {
-      "question": "Does ScrewFast offer services for large-scale construction projects?",
-      "answer": "Yes, our Enterprise Solutions are designed for larger companies requiring comprehensive services. We provide consultation, planning, and supply of high-grade tools and materials, as well as staffing solutions for substantial construction needs. Contact us for a customized quote."
+      "question": "Do I receive documentation and guarantees?",
+      "answer": "Upon completion, you'll receive a Certificate of Satisfaction from SMART PRO, along with our one-year written workmanship warranty and lien release, ensuring your peace of mind."
     }
   ]
 }

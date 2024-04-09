@@ -3,20 +3,15 @@
 import MainLayout from "../layouts/MainLayout.astro";
 import HeroSection from "../components/sections/landing/HeroSection.astro";
 import HeroSectionAlt from "../components/sections/landing/HeroSectionAlt.astro";
-import ClientsSection from "../components/sections/landing/ClientsSection.astro";
 import FeaturesGeneral from "../components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "../components/sections/features/FeaturesNavs.astro";
-import TestimonialsSection from "../components/sections/testimonials/TestimonialsSection.astro";
-import PricingSection from "../components/sections/pricing/PricingSection.astro";
 import FAQ from "../components/sections/FAQ.astro";
 import AnnouncementBanner from "../components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "../images/hero-image.avif";
+import heroImage from "../images/hero-image.webp";
 import faqs from "../data_files/faqs.json";
 import features from "../data_files/features.json";
-import featureImage from "../images/features-image.avif";
-import construction from "../images/construction-image.avif";
-import tools from "../images/automated-tools.avif";
-import dashboard from "../images/dashboard-image.avif";
+import featureImage from "../images/features-image.webp";
+import featureNavsImage from "../images/features-navbs.webp";
 
 const avatarSrcs: Array<string> = [
   "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=300&h=300&q=80",
@@ -28,19 +23,17 @@ const avatarSrcs: Array<string> = [
 
 <MainLayout>
   <AnnouncementBanner
-    btnId="dismiss-button"
-    btnTitle="Explore ScrewFast on GitHub"
-    url="https://github.com/mearashadowfax/ScrewFast"
+    btnId="callusBanner"
+    btnTitle="CALL US! +1 689-777-2147"
+    url="tel:+16897772147"
   />
 
   <HeroSection
-    title=`Equip Your Projects with <span
-        class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>`
-    subTitle="Top-quality hardware tools and expert construction services for every project need."
-    primaryBtn="Start Exploring"
-    primaryBtnURL="/products"
-    secondaryBtn="Contact Sales Team"
-    secondaryBtnURL="/contact"
+    title=`World Class <span
+        class="text-yellow-500 dark:text-yellow-400">Restoration Service</span>`
+    subTitle="Restoring normalcy fast! Trust our Florida-based emergency restoration team for water, fire, mold, and other crises. Serving Florida's homes and businesses with a comprehensive array of restoration solutions."
+    primaryBtn="Contact Us! "
+    primaryBtnURL="/contact"
     withReview={true}
     avatars={avatarSrcs}
     rating=`<span class="font-bold">4.8</span> / 5`
@@ -50,95 +43,84 @@ const avatarSrcs: Array<string> = [
     alt="Stack of ScrewFast product boxes containing assorted hardware tools"
   />
 
-  <ClientsSection
-    title="Trusted by Industry Leaders"
-    subTitle="Experience the reliability chosen by industry giants."
-  />
-
   <FeaturesGeneral
-    title="Meeting Industry Demands"
-    subTitle="At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals."
+    title="Expert Restoration & Cleaning Solutions in Florida"
+    subTitle="Discover efficient and personalized restoration & cleaning services in Florida. Our skilled team ensures swift solutions, exceeding expectations at every step."
     src={featureImage}
     alt="ScrewFast products in floating boxes"
     features={features}
   />
 
   <FeaturesNavs
-    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
+    title=`Discover Comprehensive  <span class="text-yellow-500 dark:text-yellow-400">Emergency Restoration Solutions.</span>`
     tabs={[
       {
-        heading: "Cutting-Edge Tools",
+        heading: "Fire Damage Restoration",
         content:
-          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
+          "After a fire, restoring your property is crucial. Our emergency restoration services company specializes in bringing homes and businesses back to pre-fire conditions promptly.",
         svg: "tools",
-        src: tools,
-        alt: "Yellow and black heavy equipment on brown grass field",
+        src: featureNavsImage,
+        alt: "Fire damage restoration - Swift recovery solutions for fire-damaged properties",
         first: true,
       },
       {
-        heading: "Intuitive Dashboards",
+        heading: "Water Damage Restoration",
         content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
+          "From storms to burst pipes, water damage demands immediate action. Our Florida-based team swiftly dries and repairs properties, ensuring minimal disruption.",
         svg: "dashboard",
-        src: dashboard,
-        alt: "A screenshot or graphic representation of the intuitive dashboard",
-        second: true,
+        src: featureNavsImage,
+        alt: "Water damage restoration - Rapid solutions for water-damaged properties",
       },
       {
-        heading: "Robust Features",
+        heading: "Mold Remedation Services",
         content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
+          "Mold poses health risks and property damage. Trust EverPro Restoration, Florida's mold remediation specialist, to eliminate mold and prevent its return effectively.",
         svg: "house",
-        src: construction,
-        alt: "Gray metal building frame near tower crane during daytime",
+        src: featureNavsImage,
+        alt: "Mold remediation services - Effective solutions to eliminate mold and prevent recurrence",
       },
-    ]}
-  />
-
-  <TestimonialsSection
-    title="Fast-Track Your Projects"
-    subTitle="At ScrewFast, we ensure a swift start with instant account setup. Experience the speed of construction redefined."
-    ;
-    testimonials={[
       {
+        heading: "Roof Tarping Service",
         content:
-          "ScrewFast dramatically boosted our project efficiency. Setup was instant, and their rapid response times are phenomenal. Truly a game-changer in hardware and construction support!",
-        author: "Samantha Ruiz",
-        role: "Chief Operating Officer | ConstructIt Inc.",
-        avatarSrc:
-          "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?q=80&w=1453&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80",
-      },
-    ]}
-    statistics={[
-      {
-        count: "70k+",
-        description:
-          "customers equipped — from DIY to major construction firms",
+          "Damaged roofs need swift protection. Our certified team offers prompt roof tarping installations to prevent further damage, ensuring your property stays secure.",
+        svg: "house",
+        src: featureNavsImage,
+        alt: "Roof tarping service - Immediate protection for damaged roofs",
       },
       {
-        count: "35%",
-        description:
-          "uptick in project efficiency with ScrewFast tools and services",
+        heading: "Roof Shrink wrap",
+        content:
+          "Protect your damaged roof swiftly with our advanced roof shrink-wrap service, ensuring rapid restoration and minimal further damage.",
+        svg: "house",
+        src: featureNavsImage,
+        alt: "Roof shrink wrap service - Swift roof protection for damage control",
       },
       {
-        count: "15.3%",
-        description:
-          "reduction in maintenance costs reported by long-term clients",
+        heading: "Sanitation Service",
+        content:
+          "Ensure safety and cleanliness with our comprehensive sanitation services, tailored for residential and commercial properties, guaranteeing a hygienic environment.",
+        svg: "house",
+        src: featureNavsImage,
+        alt: "Sanitation services - Ensure cleanliness and safety for residential and commercial properties",
       },
       {
-        count: "2x",
-        description: "quicker assembly using innovative fastening solutions",
+        heading: "Commercial Service",
+        content:
+          "Elevate your business with our specialized commercial services, designed to meet the unique needs of commercial properties, ensuring efficiency and professionalism.",
+        svg: "house",
+        src: featureNavsImage,
+        alt: "Commercial service - Professional solutions tailored for businesses",
       },
     ]}
   />
 
-  <PricingSection />
+
+  <HeroSectionAlt
+  title="Reach Out for Expert Assistance Today!"
+  subTitle="Ready to take the next step? Dial our hotline now for tailored guidance and answers to all your service-related inquiries."
+  url="tel:+689-777-2147"
+  />
 
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
-  <HeroSectionAlt
-    title="Let's Build Together"
-    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
-    url="https://github.com/mearashadowfax/ScrewFast"
-  />
 </MainLayout>

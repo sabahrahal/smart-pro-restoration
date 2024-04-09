@@ -1,6 +1,7 @@
 ---
 // Import the necessary dependencies
-import GithubBtn from "../../ui/buttons/GithubBtn.astro";
+import CallUsBtn from "../../ui/buttons/CallUsBtn.astro";
+
 
 // Define props from Astro
 const { title, subTitle, url } = Astro.props;
@@ -136,7 +137,7 @@ interface Props {
   {
     url && (
       <div class="mt-8 flex justify-center gap-3">
-        <GithubBtn url={url} />
+        <CallUsBtn url={url} />
       </div>
     )
   }
