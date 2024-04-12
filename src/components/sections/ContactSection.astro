@@ -44,20 +44,26 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
               <TextInput
                 id="hs-firstname-contacts"
                 label="First Name"
-                name="hs-firstname-contacts"
+                name="firstName"
               />
               <TextInput
                 id="hs-lastname-contacts"
                 label="Last Name"
-                name="hs-firstname-contacts"
+                name="lastName"
               />
             </div>
-            <EmailContactInput id="hs-email-contacts" />
-            <PhoneInput id="hs-phone-number" />
+            <EmailContactInput 
+              id="hs-email-contacts" 
+              name="email"
+            />
+            <PhoneInput 
+              id="hs-phone-number" 
+              name="phone"
+            />
             <TextAreaInput
               id="hs-about-contacts"
               label="Details"
-              name="hs-about-contacts"
+              name="message"
             />
           </div>
 
@@ -172,3 +178,34 @@ const formSubTitle: string = "We'll get back to you in 1-2 business days.";
     </div>
   </div>
 </section>
+
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+></script>
+<script type="text/javascript">
+(function () {
+  // https://dashboard.emailjs.com/admin/account
+  emailjs.init("Aq3JOQKDIkfuxLe6K");
+})();
+</script>
+<script type="text/javascript">
+window.onload = function () {
+  const form = document.getElementById("contact-form");
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+    this.contact_number.value = (Math.random() * 100000) | 0;
+    emailjs.sendForm("service_9ly3erl", "template_722f2uu", this).then(
+      function () {
+        const title = document.getElementById("title-form");
+        title.innerHTML = "¡Gracias por contactarnos!";
+        title.classList.add("text-green-800");
+        form.reset();
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
+  });
+  };
+</script>

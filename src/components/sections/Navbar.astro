@@ -3,6 +3,7 @@
 import ThemeIcon from "../ThemeIcon.astro";
 import NavLink from "../ui/links/NavLink.astro";
 import { navBarLinks } from "../../utils/navigation.ts";
+import logo from "../../images/logo.png?url"
 ---
 
 <!-- Main header component -->
@@ -21,7 +22,7 @@ import { navBarLinks } from "../../utils/navigation.ts";
         href="/"
         aria-label="Brand"
       >
-        <img src="../../images/FinalSamrtLogo.png" width="120" height="120"/>
+        <img src={logo} width="120" height="120"/>
       </a>
       <!-- Collapse toggle for smaller screens -->
       <div class="ml-auto mr-5 md:hidden">

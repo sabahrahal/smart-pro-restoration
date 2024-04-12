@@ -4,19 +4,19 @@
 // 'meta' sets a default description meta tag to describe the page content.
 // 'structuredData' defines default structured data in JSON-LD format to enhance search engine understanding of the page (for SEO purposes).
 const defaultProps = {
-  meta: "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs. Start exploring and contact our sales team for superior quality and reliability.",
+  meta: "Discover top-quality restoration & cleaning services in Florida. Our expert team delivers efficient solutions tailored to your needs, ensuring swift and satisfactory results.",
   structuredData: {
-    "@context": "https://schema.org",
+    "@context": "https://smartprorestoration.com",
     "@type": "WebPage",
-    "@id": "https://screwfast.uk",
-    "url": "https://screwfast.uk",
-    "name": "ScrewFast | Top-quality Hardware Tools",
-    "description": "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs.",
+    "@id": "https://smartprorestoration.com",
+    "url": "https://smartprorestoration.com",
+    "name": "Smart Pro | Top-quality Restorations & Cleaning",
+    "description": "Discover top-quality restoration & cleaning services in Florida. Our expert team delivers efficient solutions tailored to your needs, ensuring swift and satisfactory results.",
     "isPartOf": {
       "@type": "WebSite",
-      "url": "https://screwfast.uk",
-      "name": "ScrewFast",
-      "description": "ScrewFast offers top-tier hardware tools and expert construction services to meet all your project needs."
+      "url": "https://smartprorestoration.com",
+      "name": "Smart Pro Restoration & Cleaning",
+      "description": "Discover top-quality restoration & cleaning services in Florida."
     },
     "inLanguage": "en-US"
   },
@@ -28,11 +28,11 @@ const defaultProps = {
 const { meta = defaultProps.meta, structuredData = defaultProps.structuredData } = Astro.props;
 
 // Define the metadata for your website and individual pages
-const title: string = "ScrewFast"; // Set default title
-const ogTitle: string = "ScrewFast: Hardware Tools & Construction Services"; // Set the Open Graph title
-const author: string = "Emil Gulamov"; // Set the author's name
+const title: string = "Smart Pro"; // Set default title
+const ogTitle: string = "Smart Pro | Restorations & Cleaning"; // Set the Open Graph title
+const author: string = "Sabah Rahal"; // Set the author's name
 const ogDescription: string =
-  "Equip your projects with ScrewFast's top-quality hardware tools and expert construction services. Trusted by industry leaders, ScrewFast offers simplicity, affordability, and reliability. Experience the difference with user-centric design and cutting-edge tools. Start exploring now!"; // Set the Open Graph description
+  "Discover top-quality restoration & cleaning services in Florida. Our expert team delivers efficient solutions tailored to your needs, ensuring swift and satisfactory results."; // Set the Open Graph description
 const URL: string = `${Astro.site}`; // Set the website URL in astro.config.mjs
 const socialImage: string = `${Astro.site}/social.png`; // Set the path for the social media image
 ---
