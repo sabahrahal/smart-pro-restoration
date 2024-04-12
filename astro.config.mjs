@@ -8,7 +8,7 @@ import starlight from "@astrojs/starlight";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://screwfast.uk",
+  site: "https://smartprorestoration.com/",
   image: {
     domains: ["images.unsplash.com"],
   },
@@ -17,7 +17,7 @@ export default defineConfig({
     tailwind(),
     sitemap(),
     starlight({
-      title: "ScrewFast Docs",
+      title: "Smart Pro",
       defaultLocale: "en",
       locales: {
         en: {
@@ -44,24 +44,9 @@ export default defineConfig({
           },
           autogenerate: { directory: "guides" },
         },
-        {
-          label: "Tools & Equipment",
-          items: [
-            { label: "Tool Guides", link: "tools/tool-guides/" },
-            { label: "Equipment Care", link: "tools/equipment-care/" },
-          ],
-        },
-        {
-          label: "Construction Services",
-          autogenerate: { directory: "construction" },
-        },
-        {
-          label: "Advanced Topics",
-          autogenerate: { directory: "advanced" },
-        },
       ],
       social: {
-        github: "https://github.com/mearashadowfax/ScrewFast",
+        github: "https://github.com/sabahrahal",
       },
       disable404Route: true,
       customCss: ["./src/styles/starlight.css"],
